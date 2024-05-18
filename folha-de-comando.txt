@@ -1,0 +1,29 @@
+Angular
+
+npm install -g @angular/cli
+ng new my-dream-app
+ng serve
+ng generate service api - metódo que chama a nossa api
+ng version
+ng generate component members-detail - para criar componentes
+
+Django
+django-admin startproject myproject
+python manage.py migrate
+python manage.py createsuperuser
+python manage.py runserver
+python manage.py startapp appname "core ou app"
+pip install Pillow
+python manage.py makemigrations
+
+Core é o coração do backend, não esquecer de registrar no backend
+Pillow - usada para gestão de imagens no django
+makemigrations - cria as migrations do nosso banco de dados
+migrate - ele cria as tabelas no nosso banco de dados
+manage.py runserver - roda o nosso servidor
+
+serializers - é uma classe que vc escreve para dizer para o django,
+de que modo serão apresentados os dados.
+
+views - quando angular mandar um request, automaticamente ele precisa bater em uma views
+

@@ -1,0 +1,52 @@
+# Para quando precisar usar o for
+NG0303: Can't bind to 'ngForOf' since it isn't a known property of 'li' (used in the '_AppComponent' component template).
+1. If 'li' is an Angular component and it has the 'ngForOf' input, then verify that it ist.                                                    t.
+2. To allow any property add 'NO_ERRORS_SCHEMA' to the '@Component.schemas' of this compo '@Component.schemas' of this component.
+
+imports      : [ NgFor],
+
+# configurar o _HttpClient no app.config.ts
+
+ERROR Error [NullInjectorError]: R3InjectorError(Environment Injector)[_ApiService -> _HttpClient -> _HttpClient]:
+  NullInjectorError: No provider for _HttpClient!      
+    at NullInjector.get (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:1654:27)
+    at R3Injector.get (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:3093:33)
+    at R3Injector.get (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:3093:33)
+    at injectInjectorOnly (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:1100:40)
+    at Module.ɵɵinject (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:1106:42)
+    at Object.ApiService_Factory (c:/Users/Eladi/Documents/Angular-admin/members/members-front/src/app/api.service.ts:8:24)
+    at eval (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:3219:47)
+    at runInInjectorProfilerContext (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:866:9)
+    at R3Injector.hydrate (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:3218:21)
+    at R3Injector.get (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:3082:33) {
+  ngTempTokenPath: null,
+  ngTokenPath: [ '_ApiService', '_HttpClient', '_HttpClient' ]
+}
+Error [NullInjectorError]: R3InjectorError(Environment 
+Injector)[_ApiService -> _HttpClient -> _HttpClient]:  
+  NullInjectorError: No provider for _HttpClient!      
+    at NullInjector.get (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:1654:27)
+    at R3Injector.get (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:3093:33)
+    at R3Injector.get (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:3093:33)
+    at injectInjectorOnly (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:1100:40)
+    at Module.ɵɵinject (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:1106:42)
+    at Object.ApiService_Factory (c:/Users/Eladi/Documents/Angular-admin/members/members-front/src/app/api.service.ts:8:24)
+    at eval (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:3219:47)
+    at runInInjectorProfilerContext (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:866:9)
+    at R3Injector.hydrate (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:3218:21)
+    at R3Injector.get (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:3082:33) {
+  ngTempTokenPath: null,
+  ngTokenPath: [ '_ApiService', '_HttpClient', '_HttpClient' ]
+}
+01:05:46 [vite] Internal server error: R3InjectorError(Environment Injector)[_ApiService -> _HttpClient -> _HttpClient]: 
+  NullInjectorError: No provider for _HttpClient!      
+      at NullInjector.get (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:1654:27)
+      at R3Injector.get (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:3093:33)
+      at R3Injector.get (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:3093:33)
+      at injectInjectorOnly (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:1100:40)
+      at Module.ɵɵinject (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:1106:42)
+      at Object.ApiService_Factory (c:/Users/Eladi/Documents/Angular-admin/members/members-front/src/app/api.service.ts:8:24)
+      at eval (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:3219:47)
+      at runInInjectorProfilerContext (c:/Users/Eladi/Documents/Angular-admin/members/members-front/node_modules/@angular/core/fesm2022/core.mjs:866:9)
+      at R3Injector.hydrate (c:/Users/Eladi/Documents/A
+

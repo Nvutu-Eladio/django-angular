@@ -1,0 +1,18 @@
+<h1>Members</h1>
+
+<ul>
+  <!-- Usando *ngFor para percorrer a matriz members -->
+  <li *ngFor="let member of members" (click)="memberClicked(member)">
+    <!-- Exibindo as informações de cada membro -->
+    {{ member.id }} - {{ member.name }} {{ member.surname }}
+  </li>
+</ul>
+
+<!-- <p>{{ selected_member.id }}</p>
+<br />
+<p>{{ selected_member.name }}</p>
+<br />
+<p>{{ selected_member.surname }}</p>
+<br /> -->
+
+<router-outlet></router-outlet>
