@@ -1,3 +1,13 @@
 <h1>Member Detail Component!</h1>
 
-Membro carregado: {{ selected_member?.name }} {{ selected_member?.surname }}
+Membro carregado: {{ selected_member.name }} {{ selected_member.surname }}
+
+<p>Selected id = {{ selected_member.id }}</p>
+
+<input type="text" [(ngModel)]="selected_member.id" />
+<input type="text" [(ngModel)]="selected_member.name" />
+<input type="text" [(ngModel)]="selected_member.surname" />
+<button (click)="update()">Update Member</button>
+<button (click)="delete()">Delete Member</button>
+
+<button (click)="newMember()">New</button>

@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { ApiService } from './api.service';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [NgFor, RouterOutlet],
+  imports: [NgFor, RouterOutlet, FormsModule],
 })
 export class AppComponent {
   title = 'members-front';
@@ -34,7 +35,7 @@ export class AppComponent {
     },
   ];
   //Chamando o api server
-  constructor(private api: ApiService) {
+  constructor(private api: ApiService, private router: Router) {
     this.getMembers();
   }
   // Trazendo de forma dinamica os dados da api
@@ -50,13 +51,15 @@ export class AppComponent {
   };
 
   memberClicked = (member: { id: number }) => {
-    this.api.getMember(member.id).subscribe(
-      (data) => {
-        console.log(data);
-      },
-      (error) => {
-        console.log('Error', error.message);
-      }
-    );
+    this.router.navigate(['member-detail', member.id]);
+
+    // this.api.getMember(member.id).subscribe(
+    //   (data) => {
+    //     console.log(data);
+    //   },
+    //   (error) => {
+    //     console.log('Error', error.message);
+    //   }
+    // );
   };
 }
